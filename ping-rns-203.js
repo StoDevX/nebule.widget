@@ -1,4 +1,4 @@
-command: '~/Desktop/ping-rns.fish 203',
+command: './ping-rns.fish 203',
 refreshFrequency: 60000,
 
 style: [
