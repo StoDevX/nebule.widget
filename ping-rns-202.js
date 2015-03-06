@@ -1,9 +1,9 @@
-command: './ping-rns.fish 202',
+command: './ping-rns.fish 202 21',
 refreshFrequency: 60000,
 
 style: [
 	'font-family: monospace',
-	'top: 5px', 
+	'top: 5px',
 	'left: 5px',
 	'padding: 5px',
 	'background-color: rgba(black, 0.5)',
@@ -26,6 +26,6 @@ render: function(result) {
 			str += '<span class="'+(comps[comp]?'on':'off')+'">'+comp+'</span>'
 		}
 	}
-	
+
 	return 'RNS 202: ' + str
 }

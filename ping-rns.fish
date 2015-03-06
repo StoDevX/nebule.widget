@@ -1,8 +1,9 @@
 #!/usr/local/bin/fish
 
 set room $argv[1]
+set machine_count $argv[2]
+
 printf "{"
-set machine_count 21
 for machine in (seq 1 $machine_count)
   printf "\"$machine\":"
   ping -o -q rns$room-$machine.cs.stolaf.edu ^/dev/null >/dev/null
