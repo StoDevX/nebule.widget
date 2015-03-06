@@ -6,7 +6,7 @@ set machine_count $argv[2]
 printf "{"
 for machine in (seq 1 $machine_count)
   printf "\"$machine\":"
-  ping -o -q rns$room-$machine.cs.stolaf.edu ^/dev/null >/dev/null
+  ping -o -q -t 1 rns$room-$machine.cs.stolaf.edu ^/dev/null >/dev/null
   if test $status -eq 0
     printf "true"
   else
