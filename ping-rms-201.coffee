@@ -1,4 +1,4 @@
-command: 'ping-rns.widget/ping.sh rms 201 10'
+command: 'nebule.widget/ping.sh rms 201 10'
 refreshFrequency: 600000  # 10 minutes
 
 style: '''
