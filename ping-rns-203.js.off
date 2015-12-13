@@ -1,6 +1,6 @@
 import map from 'lodash/collection/map'
 
-export const command = 'ping-rns.widget/ping-rns.fish 203 16'
+export const command = 'nebule.widget/ping-rns.fish 203 16'
 export const refreshFrequency = '10m'
 
 export const style = `
