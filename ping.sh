@@ -8,7 +8,7 @@ printf "{"
 
 for machine in $(seq 1 "$machine_count"); do
   printf "\"%s\":" "$machine"
-  ping -o -q -t 1 "$building""$room"-"$machine".cs.stolaf.edu 1>/dev/null 2>/dev/null
+  ping -o -q -t 2 "$building""$room"-"$machine".cs.stolaf.edu 1>/dev/null 2>/dev/null
   if test "$?" -eq 0; then
     printf "true"
   else
