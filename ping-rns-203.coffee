@@ -3,7 +3,7 @@ refreshFrequency: 600000  # 10 minutes
 
 style: '''
 	top: 3px
-	left: 761px
+	left: 812px
 
 	font-family: Source Code Pro
 	font-size: 11px
