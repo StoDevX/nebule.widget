@@ -15,11 +15,16 @@ style: '''
 
 	span
 		display: inline-block
-		padding: 0px 6px 0px 6px
+		width: 2em
+		text-align: right
 
 	.off
 		color: black
 		font-weight: bold
+
+	display: flex
+	x-list
+		width: 24em
 '''
 
 render: (result) ->
@@ -30,4 +35,4 @@ render: (result) ->
 		className = if comps[comp] then 'on' else 'off'
 		str += "<span class='#{className}'>#{comp}</span>"
 
-	return "202 |#{str}"
+	return "<x-room>202 |</x-room><x-list>#{str}</x-list>"

@@ -1,9 +1,9 @@
-command: 'nebule.widget/ping.sh rms 201 12'
+command: 'nebule.widget/ping.sh rns 203 16'
 refreshFrequency: 600000  # 10 minutes
 
 style: '''
 	top: 3px
-	left: 3px
+	left: 812px
 
 	font-family: Source Code Pro
 	font-size: 11px
@@ -15,11 +15,16 @@ style: '''
 
 	span
 		display: inline-block
-		padding: 0px 6px 0px 6px
+		width: 2em
+		text-align: right
 
 	.off
 		color: black
 		font-weight: bold
+
+	display: flex
+	x-list
+		width: 24em
 '''
 
 render: (result) ->
@@ -30,4 +35,4 @@ render: (result) ->
 		className = if comps[comp] then 'on' else 'off'
 		str += "<span class='#{className}'>#{comp}</span>"
 
-	return "201 |#{str}"
+	return "<x-room>203 |</x-room><x-list>#{str}</x-list>"
